@@ -1,6 +1,6 @@
 export default {
   background: {
-    color: ["bg-slate-800"],
+    color: ["bg-slate-300", "bg-slate-600", "bg-slate-800"],
   },
   cursor: ["pointer", "wait", "text", "move", "help", "not-allowed"],
 
@@ -46,6 +46,7 @@ export default {
       "font-black",
     ],
     align: ["text-left", "text-center", "text-right", "text-start", "text-end"],
+    color: ["text-white"],
   },
   margin: {
     plane: ["m-1", "m-2", "m-3", "m-4"],
@@ -58,7 +59,7 @@ export default {
     plane: ["p-1", "p-2", "p-4"],
     top: ["pt-0", "pt-1"],
     bottom: ["pb-0"],
-    left: ["pl-0"],
+    left: ["pl-0", "pl-2"],
     right: ["pr-0", "pr-2"],
   },
 
@@ -84,6 +85,9 @@ export default {
       "border-3",
       "border-4",
       "border-5",
+      "border-6",
+      "border-7",
+      "border-8",
     ],
     type: [
       "border-solid",
@@ -93,8 +97,15 @@ export default {
       "border-hidden",
       "border-none",
     ],
-    color: ["border-black", "border-gray", "border-cred", "border-subsColor"],
-    raidus: ["rounded-full", "rounded-lg"],
+    color: [
+      "border-black",
+      "border-gray",
+      "border-cred",
+      "border-subsColor",
+      "border-slate-400",
+      "border-slate-500",
+    ],
+    raidus: ["rounded-full", "rounded-lg", "rounded-md", "rounded-r05"],
   },
 
   hover: {
@@ -120,8 +131,34 @@ export default {
   },
 
   boxSize: {
-    w: ["full", "auto", "w-10", "w-11", "w-12", "w-16", "w-18", "w-20", "h-24"],
-    h: ["full", "auto", "h-10", "h-11", "h-12", "h-16", "h-18", "h-20", "h-24"],
+    w: [
+      "full",
+      "auto",
+      "w-8",
+      "w-10",
+      "w-11",
+      "w-12",
+      "w-16",
+      "w-18",
+      "w-20",
+      "w-24",
+      "w-48",
+      "w-60",
+      "w-64",
+      "w-80",
+    ],
+    h: [
+      "full",
+      "auto",
+      "h-8",
+      "h-10",
+      "h-11",
+      "h-12",
+      "h-16",
+      "h-18",
+      "h-20",
+      "h-24",
+    ],
   },
 
   before: ['before:content-["Subs"]', "before:text-subsColor"],

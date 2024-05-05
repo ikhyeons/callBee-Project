@@ -25,8 +25,13 @@ export default class TwBuilder {
     return this;
   }
 
-  setText(size: twTextSize, weight: twTextWeight, align: twTextAlign) {
-    this.updateText(`text-${size} font-${weight} text-${align} `);
+  setText(
+    size: twTextSize,
+    weight: twTextWeight,
+    color: string,
+    align: twTextAlign
+  ) {
+    this.updateText(`text-${size} font-${weight} text-${align} text-${color} `);
     return this;
   }
 
@@ -118,6 +123,10 @@ export default class TwBuilder {
     return this;
   }
 
+  setOutlineNone() {
+    this.updateText(`outline-none `);
+    return this;
+  }
   setRadius(radius: string | number) {
     this.updateText(`rounded-${radius} `);
     return this;

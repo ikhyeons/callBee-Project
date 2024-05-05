@@ -13,6 +13,10 @@ const config: Config = {
       xs: "0.85rem",
     },
     extend: {
+      transitionDuration: {
+        "50": "50ms",
+      },
+
       borderWidth: {
         "1": "1px",
         "3": "3px",
@@ -22,7 +26,8 @@ const config: Config = {
       borderRadius: {
         full: "50%",
         lg: "35%",
-        md: "25%",
+        md: "20%",
+        r05: "0.5rem",
       },
       colors: {
         subsColor: "#24ff24",

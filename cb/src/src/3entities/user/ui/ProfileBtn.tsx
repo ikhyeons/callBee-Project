@@ -20,17 +20,16 @@ function ProfileBtn(props: { nickname: string; isStream: boolean }) {
 
   const btnStyle = builder
     .setCursor("pointer")
-    .setBorder(isHover ? 5 : 4, "solid", `${props.isStream ? "cred" : "gray"}`)
+    .setBorder(isHover ? 8 : 4, "solid", `${props.isStream ? "cred" : "gray"}`)
     .setRadius(isHover ? "lg" : "full")
-
     .setSize(12, 12)
-    .setTransition("border", 100, "ease-in")
+    .setTransition("border", 50, "ease-in")
     .build();
 
   const imageStyle = builder
-    .setRadius(isHover ? "lg" : "full")
+    .setRadius(isHover ? "md" : "full")
     .setBorder("none", "solid", `${props.isStream ? "cred" : "gray"}`)
-    .setTransition("border", 100, "ease-in")
+    .setTransition("border", 50, "ease-in")
     .setFilter(`${props.isStream ? null : "grayscale"}`)
     .build();
 
