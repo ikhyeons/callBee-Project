@@ -105,7 +105,13 @@ export default {
       "border-slate-400",
       "border-slate-500",
     ],
-    raidus: ["rounded-full", "rounded-lg", "rounded-md", "rounded-r05"],
+    raidus: [
+      "rounded-full",
+      "rounded-lg",
+      "rounded-md",
+      "rounded-r05",
+      "rounded-r1",
+    ],
   },
 
   hover: {

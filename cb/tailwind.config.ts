@@ -28,6 +28,7 @@ const config: Config = {
         lg: "35%",
         md: "20%",
         r05: "0.5rem",
+        r1: "1rem",
       },
       colors: {
         subsColor: "#24ff24",

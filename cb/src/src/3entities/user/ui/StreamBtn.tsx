@@ -3,12 +3,12 @@ import TwBuilder from "@/src/4shared/TwBuilder";
 import Image from "next/image";
 import { useState } from "react";
 
-function ProfileBtn(props: { nickname: string; isStream: boolean }) {
+function StreamBtn(props: { nickname: string; isStream: boolean }) {
   const [isHover, setIsHover] = useState(false);
   const builder = new TwBuilder("");
 
   const boxStyle = builder
-    .setText("xs", "normal", "center")
+    .setText("xs", "normal", "black", "center")
     .setDisplay("flex")
     .setMarginLeft(1)
     .setMarginRight(1)
@@ -35,7 +35,7 @@ function ProfileBtn(props: { nickname: string; isStream: boolean }) {
 
   const nicknameBox = builder
     .setPosition("absolute")
-    .setText("x2s", "bold", "center")
+    .setText("x2s", "bold", "white", "center")
     .setTop(14)
     .setSize(16, 10)
     .build();
@@ -66,4 +66,4 @@ function ProfileBtn(props: { nickname: string; isStream: boolean }) {
   );
 }
 
-export default ProfileBtn;
+export default StreamBtn;

@@ -8,7 +8,7 @@ function SearchBar() {
     .setDisplay("flex")
     .setFlexJustify("between")
     .setSize(72, 10)
-    .setRadius("r05")
+    .setRadius("r1")
     .setPaddingLeft(2)
     .setBorder(2, "solid", "slate-500")
     .setBackgroundColor("slate-600")
@@ -17,12 +17,15 @@ function SearchBar() {
   const searchBarStyle = twBuilder
     .setOutlineNone()
     .setSize(64, "auto")
+    .setPaddingLeft(1)
+    .setRadius("r1")
     .setText("base", "normal", "white", "left")
     .setBackgroundColor("slate-600")
     .build();
 
   const searchBtnStyle = twBuilder
     .setRadius("r05")
+    .setRadius("r1")
     .setSize(8, "auto")
     .setBackgroundColor("slate-600")
     .build();
