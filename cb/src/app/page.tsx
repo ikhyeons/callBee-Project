@@ -1,3 +1,3 @@
 export default function Home() {
-  return <main>ㅂㅇ</main>;
+  return <main></main>;
 }
