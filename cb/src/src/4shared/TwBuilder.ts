@@ -157,7 +157,7 @@ export default class TwBuilder {
     return this;
   }
   build() {
-    const rtext = this.text;
+    const rtext = this.text.trim();
     this.text = "";
     return rtext;
   }
