@@ -1,12 +1,18 @@
 import React from "react";
 import StreamBox from "../3entities/stream/ui/StreamBox";
-import IndexStreamList from "../3entities/stream/ui/IndexStreamList";
+import RecentStreamList from "../3entities/stream/ui/RecentStreamList";
+import TwBuilder from "../4shared/TwBuilder";
 
 function IndexStreamDisplay() {
+  const twBuilder = new TwBuilder("");
+  const boxStyle = twBuilder
+    .setDisplay("flex")
+    .setSize("full", "3/5dvh")
+    .build();
   return (
-    <section>
+    <section className={`${boxStyle}`}>
       <StreamBox />
-      <IndexStreamList />
+      <RecentStreamList />
     </section>
   );
 }

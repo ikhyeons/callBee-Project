@@ -12,7 +12,21 @@ const config: Config = {
       x2s: "0.72rem",
       xs: "0.85rem",
     },
+
     extend: {
+      width: {
+        "18": "72px",
+      },
+      height: {
+        under: "calc(40dvh - 80px)",
+        fm24: "calc(100% - 24px)",
+        "18": "72px",
+        "1/6h": "16.6%",
+        "1/7h": "14.2%",
+        "3/5dvh": "60dvh",
+        "4/5dvh": "80dvh",
+      },
+
       transitionDuration: {
         "50": "50ms",
       },
@@ -31,6 +45,7 @@ const config: Config = {
         r1: "1rem",
       },
       colors: {
+        black19: "#191919",
         subsColor: "#24ff24",
         cred: "#ff2222",
         gray: "#aaaaaa",

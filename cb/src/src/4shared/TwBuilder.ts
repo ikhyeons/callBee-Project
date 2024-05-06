@@ -1,3 +1,5 @@
+import { type } from "os";
+
 export default class TwBuilder {
   constructor(private text: string) {
     this.text = text;
@@ -156,6 +158,12 @@ export default class TwBuilder {
     this.updateText(`bg-${color} `);
     return this;
   }
+
+  setFlex(type: twFlex) {
+    this.updateText(`flex-${type} `);
+    return this;
+  }
+
   build() {
     const rtext = this.text.trim();
     this.text = "";

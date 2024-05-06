@@ -1,9 +1,12 @@
 import React from "react";
 import Player from "./Player";
+import TwBuilder from "@/src/4shared/TwBuilder";
 
 function StreamBox() {
+  const twBuilder = new TwBuilder("");
+  const boxStyle = twBuilder.setSize("9/12", "auto").build();
   return (
-    <div>
+    <div className={`${boxStyle}`}>
       <Player />
     </div>
   );

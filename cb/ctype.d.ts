@@ -11,6 +11,7 @@ type twFlexJustify =
   | "evenly"
   | "stretch";
 type twAlignItem = "start" | "end" | "center" | "baseline" | "stretch";
+type twFlex = "1" | "auto" | "initial" | "none";
 type twCursor = "pointer" | "wait" | "text" | "move" | "help" | "not-allowed";
 type twBorder = "solid" | "dashed" | "dotted" | "double" | "hidden" | "none";
 type twTextSize = "x2s" | "xs" | "sm" | "base" | "lg" | "xl";

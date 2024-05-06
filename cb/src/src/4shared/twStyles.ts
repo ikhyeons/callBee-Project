@@ -1,6 +1,14 @@
 export default {
   background: {
-    color: ["bg-black", "bg-slate-300", "bg-slate-600", "bg-slate-800"],
+    color: [
+      "bg-black",
+      "bg-black19",
+      "bg-slate-300",
+      "bg-slate-600",
+      "bg-slate-800",
+      "bg-cred",
+      "bg-subsColor",
+    ],
   },
   cursor: ["pointer", "wait", "text", "move", "help", "not-allowed"],
 
@@ -13,24 +21,25 @@ export default {
   display: ["flex", "grid", "block", "span"],
   flex: {
     direction: ["flex-row", "flex-row-reverse", "flex-col", "flex-col-reverse"],
+    justify: [
+      "justify-normal",
+      "justify-start",
+      "justify-end",
+      "justify-center",
+      "justify-between",
+      "justify-around",
+      "justify-evenly",
+      "justify-stretch",
+    ],
+    items: [
+      "items-start",
+      "items-end",
+      "items-center",
+      "items-baseline",
+      "items-stretch",
+    ],
+    flex: ["flex-1", "flex-auto", "flex-initial", "flex-none"],
   },
-  justify: [
-    "justify-normal",
-    "justify-start",
-    "justify-end",
-    "justify-center",
-    "justify-between",
-    "justify-around",
-    "justify-evenly",
-    "justify-stretch",
-  ],
-  items: [
-    "items-start",
-    "items-end",
-    "items-center",
-    "items-baseline",
-    "items-stretch",
-  ],
 
   text: {
     size: ["text-x2s", "text-xs", "text-sm", "text_base", "text-lg", "text-xl"],
@@ -138,6 +147,8 @@ export default {
 
   boxSize: {
     w: [
+      "w-1/4",
+      "w-9/12",
       "w-dvw",
       "w-screen",
       "w-full",
@@ -156,6 +167,12 @@ export default {
       "w-80",
     ],
     h: [
+      "h-under",
+      "h-fm24",
+      "h-1/6h",
+      "h-1/7h",
+      "h-3/5dvh",
+      "h-4/5dvh",
       "h-full",
       "h-auto",
       "h-8",

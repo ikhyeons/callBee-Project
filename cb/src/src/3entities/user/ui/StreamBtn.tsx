@@ -20,7 +20,7 @@ function StreamBtn(props: { nickname: string; isStream: boolean }) {
 
   const btnStyle = builder
     .setCursor("pointer")
-    .setBorder(isHover ? 8 : 4, "solid", `${props.isStream ? "cred" : "gray"}`)
+    .setBorder(isHover ? 8 : 6, "solid", `${props.isStream ? "cred" : "gray"}`)
     .setRadius(isHover ? "lg" : "full")
     .setSize(12, 12)
     .setTransition("border", 50, "ease-in")
