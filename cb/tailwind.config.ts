@@ -16,6 +16,7 @@ const config: Config = {
     extend: {
       width: {
         "18": "72px",
+        fm96: "calc(100% - 96px)",
       },
       height: {
         under: "calc(40dvh - 80px)",

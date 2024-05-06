@@ -1,5 +1,5 @@
 import React from "react";
-import CircleBtn from "../CircleBtn";
+import CircleBtn from "../../../../4shared/CircleBtn";
 
 function Stock() {
   return (

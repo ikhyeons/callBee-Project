@@ -1,6 +1,6 @@
 import React from "react";
-import StreamBox from "../3entities/stream/ui/StreamBox";
-import RecentStreamList from "../3entities/stream/ui/RecentStreamList";
+import PlayerBox from "../3entities/stream/ui/PlayerBox";
+import RecentStreamUl from "../3entities/stream/ui/RecentStreamUl";
 import TwBuilder from "../4shared/TwBuilder";
 
 function IndexStreamDisplay() {
@@ -11,8 +11,8 @@ function IndexStreamDisplay() {
     .build();
   return (
     <section className={`${boxStyle}`}>
-      <StreamBox />
-      <RecentStreamList />
+      <PlayerBox />
+      <RecentStreamUl />
     </section>
   );
 }

@@ -1,7 +1,7 @@
 import TwBuilder from "@/src/4shared/TwBuilder";
 import React from "react";
 
-function StreamLi(props: { isCurrent: boolean }) {
+function RecentStreamLi(props: { isCurrent: boolean }) {
   const twBuilder = new TwBuilder("");
 
   const listStyle = twBuilder
@@ -37,21 +37,18 @@ function StreamLi(props: { isCurrent: boolean }) {
       <div className={`${profileIcon}`}>화면샘플</div>
       <div className={`${infoBox}`}>
         <div className={`${firstStyle}`}>
-          <span>잠자는오리 &nbsp;</span>
+          <div>
+            <span>잠자는오리 &nbsp;</span>
+            <span>발로란트</span>
+          </div>
+
           <div>1128명 시청 중</div>
         </div>
-        <div>
-          <span>태그</span>
-          <span>태그</span>
-          <span>태그</span>
-          <span>태그</span>
-          <span>태그</span>
-          <span>태그</span>
-        </div>
-        <p>제목</p>
+        <div>제목</div>
+        <p>부제목</p>
       </div>
     </li>
   );
 }
 
-export default StreamLi;
+export default RecentStreamLi;

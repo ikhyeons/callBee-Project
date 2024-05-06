@@ -1,10 +1,27 @@
-import { type } from "os";
-
 export default class TwBuilder {
   constructor(private text: string) {
     this.text = text;
   }
 
+  setGridGap(value: number | string) {
+    this.updateText(`gap-${value} `);
+    return this;
+  }
+
+  setGridTemplateRows(value: number | string) {
+    this.updateText(`grid-rows-${value} `);
+    return this;
+  }
+
+  setGridTemplateColumns(value: number | string) {
+    this.updateText(`grid-cols-${value} `);
+    return this;
+  }
+
+  setOverflow(type: twOverflow) {
+    this.updateText(`overflow-${type} `);
+    return this;
+  }
   setPosition(type: twPosition) {
     this.updateText(`${type} `);
     return this;
@@ -75,41 +92,41 @@ export default class TwBuilder {
     this.updateText(`m-${m} `);
     return this;
   }
-  setMarginTop(m: number) {
+  setMarginTop(m: number | string) {
     this.updateText(`mt-${m} `);
     return this;
   }
-  setMarginBottom(m: number) {
+  setMarginBottom(m: number | string) {
     this.updateText(`mb-${m} `);
     return this;
   }
-  setMarginLeft(m: number) {
+  setMarginLeft(m: number | string) {
     this.updateText(`ml-${m} `);
     return this;
   }
-  setMarginRight(m: number) {
+  setMarginRight(m: number | string) {
     this.updateText(`mr-${m} `);
     return this;
   }
 
-  setPadding(p: number) {
+  setPadding(p: number | string) {
     this.updateText(`p-${p} `);
     return this;
   }
 
-  setPaddingTop(p: number) {
+  setPaddingTop(p: number | string) {
     this.updateText(`pt-${p} `);
     return this;
   }
-  setPaddingBottom(p: number) {
+  setPaddingBottom(p: number | string) {
     this.updateText(`pb-${p} `);
     return this;
   }
-  setPaddingLeft(p: number) {
+  setPaddingLeft(p: number | string) {
     this.updateText(`pl-${p} `);
     return this;
   }
-  setPaddingRight(p: number) {
+  setPaddingRight(p: number | string) {
     this.updateText(`pr-${p} `);
     return this;
   }

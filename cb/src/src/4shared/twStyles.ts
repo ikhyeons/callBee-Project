@@ -41,6 +41,13 @@ export default {
     flex: ["flex-1", "flex-auto", "flex-initial", "flex-none"],
   },
 
+  grid: {
+    col: { cols: ["grid-cols-1", "grid-cols-5"], colsgap: ["gap-4"] },
+    row: {
+      rows: ["grid-rows-1"],
+    },
+  },
+
   text: {
     size: ["text-x2s", "text-xs", "text-sm", "text_base", "text-lg", "text-xl"],
     weight: [
@@ -59,16 +66,16 @@ export default {
   },
   margin: {
     plane: ["m-1", "m-2", "m-3", "m-4"],
-    top: ["mt-0", "mt-1", "mt-2"],
-    bottom: ["mb-0", "mb-1", "mb-2"],
-    left: ["ml-0", "ml-1", "ml-2"],
-    right: ["mr-0", "mr-1", "mr-2"],
+    top: ["mt-0", "mt-1", "mt-2", "mt-4", "mt-8"],
+    bottom: ["mb-0", "mb-1", "mb-2", "mb-4", "mb-8"],
+    left: ["ml-0", "ml-1", "ml-2", "ml-auto"],
+    right: ["mr-0", "mr-1", "mr-2", "mr-auto"],
   },
   padding: {
-    plane: ["p-1", "p-2", "p-4"],
+    plane: ["p-1", "p-2", "p-4", "p-5"],
     top: ["pt-0", "pt-1"],
     bottom: ["pb-0"],
-    left: ["pl-0", "pl-2"],
+    left: ["pl-0", "pl-2", "pl-5"],
     right: ["pr-0", "pr-2"],
   },
 
@@ -147,7 +154,10 @@ export default {
 
   boxSize: {
     w: [
+      "w-fm96",
       "w-1/4",
+      "w-1/5",
+      "w-3/4",
       "w-9/12",
       "w-dvw",
       "w-screen",
@@ -167,6 +177,8 @@ export default {
       "w-80",
     ],
     h: [
+      "h-0",
+      "h-1/2",
       "h-under",
       "h-fm24",
       "h-1/6h",
@@ -183,9 +195,28 @@ export default {
       "h-18",
       "h-20",
       "h-24",
+      "h-48",
     ],
   },
 
   before: ['before:content-["Subs"]', "before:text-subsColor"],
   after: ['after:content-["Subs"]', "after:text-subsColor"],
+
+  overflow: [
+    "overflow-auto",
+    "overflow-hidden",
+    "overflow-clip",
+    "overflow-visible",
+    "overflow-scroll",
+    "overflow-x-auto",
+    "overflow-y-auto",
+    "overflow-x-hidden",
+    "overflow-y-hidden",
+    "overflow-x-clip",
+    "overflow-y-clip",
+    "overflow-x-visible",
+    "overflow-y-visible",
+    "overflow-x-scroll",
+    "overflow-y-scroll",
+  ],
 };
