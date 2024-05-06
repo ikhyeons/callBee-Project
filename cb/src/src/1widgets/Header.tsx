@@ -13,7 +13,7 @@ function Header() {
     .setFlexJustify("around")
     .setAlignItem("center")
     .setBackgroundColor("black")
-    .setSize("dvw", "auto")
+    .setSize("dvw", "20")
     .setTop(0)
     .build();
 
