@@ -1,23 +1,22 @@
 import React from "react";
 import Image from "next/image";
+import TwBuilder from "@/src/4shared/TwBuilder";
 
 function PopularCategoryLi() {
+  const twBuilder = new TwBuilder("");
+  const boxStyle = twBuilder.setSize("1/6", 80).build();
   return (
-    <div>
+    <div className={`${boxStyle}`}>
       <Image
-        src={"/pictures/displaySample.png"}
-        width={260}
-        height={200}
-        alt="방송화면"
+        src={"/pictures/battleground.png"}
+        alt="화면샘플"
+        width={240}
+        height={320}
       />
-      <div className="flex">
-        <Image src={"/"} width={48} height={48} alt="이미지" />
-        <div className="flex-1">
-          <p>그리고 잠시 사이를 두어 나는 어무것도 할 수 없었다.</p>
-          <p>잠자는오리</p>
-          <p>카테고리 목록들</p>
-        </div>
-      </div>
+      <p>배틀그라운드</p>
+      <p>
+        <span className="text-xs">시청자 3.3k ㆍ 라이브 95개</span>
+      </p>
     </div>
   );
 }

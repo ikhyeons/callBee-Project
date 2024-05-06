@@ -4,32 +4,33 @@ import TwBuilder from "@/src/4shared/TwBuilder";
 
 function PopularStreamUl() {
   const twBuilder = new TwBuilder("");
-  const boxStyle = twBuilder
-    .setDisplay("flex")
-    .setSize("fm96", "auto")
-    .setOverflow("y-hidden")
-    .setOverflow("x-scroll")
+  const ulStyle = twBuilder
+    .setDisplay("grid")
+    .setGridGap(4)
+    .setGridTemplateColumns(5)
+    .setMarginBottom(12)
     .build();
-
-  const ulStyle = twBuilder.setDisplay("flex").setPadding(5).build();
-
   return (
-    <div className={`${boxStyle}`}>
-      <ul className={`${ulStyle}`}>
-        <PopularStreamLi />
-        <PopularStreamLi />
-        <PopularStreamLi />
-        <PopularStreamLi />
-        <PopularStreamLi />
-        <PopularStreamLi />
-        <PopularStreamLi />
-        <PopularStreamLi />
-        <PopularStreamLi />
-        <PopularStreamLi />
-        <PopularStreamLi />
-        <PopularStreamLi />
-      </ul>
-    </div>
+    <ul className={`${ulStyle}`}>
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+      <PopularStreamLi />
+    </ul>
   );
 }
 

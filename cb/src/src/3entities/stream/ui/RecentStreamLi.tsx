@@ -1,4 +1,5 @@
 import TwBuilder from "@/src/4shared/TwBuilder";
+import Image from "next/image";
 import React from "react";
 
 function RecentStreamLi(props: { isCurrent: boolean }) {
@@ -6,6 +7,7 @@ function RecentStreamLi(props: { isCurrent: boolean }) {
 
   const listStyle = twBuilder
     .setDisplay("flex")
+    .setCursor("pointer")
     .setFlexJustify("around")
     .setAlignItem("center")
     .setSize("full", "1/6h")
@@ -34,7 +36,13 @@ function RecentStreamLi(props: { isCurrent: boolean }) {
 
   return (
     <li className={`${listStyle}`}>
-      <div className={`${profileIcon}`}>화면샘플</div>
+      <Image
+        src={"/pictures/displaySample.png"}
+        width={96}
+        alt="화면샘플"
+        height={72}
+        className={`${profileIcon}`}
+      />
       <div className={`${infoBox}`}>
         <div className={`${firstStyle}`}>
           <div>

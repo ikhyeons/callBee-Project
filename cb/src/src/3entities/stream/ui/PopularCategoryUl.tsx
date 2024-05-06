@@ -6,23 +6,12 @@ function PopularCategoryUl() {
   const twBuilder = new TwBuilder("");
   const ulStyle = twBuilder
     .setDisplay("grid")
-    .setGridGap(4)
-    .setGridTemplateColumns(5)
+    .setGridGap(1)
+    .setGridTemplateColumns(6)
+    .setMarginBottom(12)
     .build();
   return (
     <ul className={`${ulStyle}`}>
-      <PopularCategoryLi />
-      <PopularCategoryLi />
-      <PopularCategoryLi />
-      <PopularCategoryLi />
-      <PopularCategoryLi />
-      <PopularCategoryLi />
-      <PopularCategoryLi />
-      <PopularCategoryLi />
-      <PopularCategoryLi />
-      <PopularCategoryLi />
-      <PopularCategoryLi />
-      <PopularCategoryLi />
       <PopularCategoryLi />
       <PopularCategoryLi />
       <PopularCategoryLi />

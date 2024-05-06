@@ -10,7 +10,14 @@ export default {
       "bg-subsColor",
     ],
   },
-  cursor: ["pointer", "wait", "text", "move", "help", "not-allowed"],
+  cursor: [
+    "cursor-pointer",
+    "cursor-wait",
+    "cursor-text",
+    "cursor-move",
+    "cursor-help",
+    "cursor-not-allowed",
+  ],
 
   position: ["absolute", "relative", "fixed", "sticky", "static"],
   top: ["top-0", "top-4", "top-12", "top-14", "top-16", "top-20"],
@@ -42,7 +49,10 @@ export default {
   },
 
   grid: {
-    col: { cols: ["grid-cols-1", "grid-cols-5"], colsgap: ["gap-4"] },
+    col: {
+      cols: ["grid-cols-1", "grid-cols-5", "grid-cols-6", "grid-cols-8"],
+      colsgap: ["gap-1", "gap-2", "gap-4"],
+    },
     row: {
       rows: ["grid-rows-1"],
     },
@@ -72,11 +82,11 @@ export default {
     right: ["mr-0", "mr-1", "mr-2", "mr-auto"],
   },
   padding: {
-    plane: ["p-1", "p-2", "p-4", "p-5"],
-    top: ["pt-0", "pt-1"],
-    bottom: ["pb-0"],
-    left: ["pl-0", "pl-2", "pl-5"],
-    right: ["pr-0", "pr-2"],
+    plane: ["p-0", "p-1", "p-2", "p-3", "p-4", "p-5"],
+    top: ["pt-0", "pt-1", "pt-2", "pt-3", "pt-4", "pt-5"],
+    bottom: ["pb-0", "pb-1", "pb-2", "pb-3", "pb-4", "pb-5"],
+    left: ["pl-0", "pl-1", "pl-2", "pl-3", "pl-4", "pl-5"],
+    right: ["pr-0", "pr-1", "pr-2", "pr-3", "pr-4", "pr-5"],
   },
 
   transition: {
@@ -157,6 +167,7 @@ export default {
       "w-fm96",
       "w-1/4",
       "w-1/5",
+      "w-4/5",
       "w-3/4",
       "w-9/12",
       "w-dvw",
@@ -171,6 +182,7 @@ export default {
       "w-18",
       "w-20",
       "w-24",
+      "w-40",
       "w-48",
       "w-60",
       "w-64",
@@ -196,6 +208,8 @@ export default {
       "h-20",
       "h-24",
       "h-48",
+      "h-60",
+      "h-80",
     ],
   },
 

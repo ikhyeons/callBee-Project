@@ -1,6 +1,6 @@
 import TwBuilder from "@/src/4shared/TwBuilder";
 import React from "react";
-import PopularCategoryUl from "./PopularCategoryUl";
+import PopularStreamUl from "./PopularStreamUl";
 
 function PopularStreamSection() {
   const twBuilder = new TwBuilder("");
@@ -10,11 +10,11 @@ function PopularStreamSection() {
     .setMarginRight("auto")
     .build();
   return (
-    <section className="bg-black19 pt-24">
+    <section className="bg-black19 pt-12">
       <section className={`${boxStyle}`}>
-        <div className="mb-8">인기</div>
-        <PopularCategoryUl />
-        <div className="text-center">더보기</div>
+        <div className="mb-8">인기 방송</div>
+        <PopularStreamUl />
+        <div className="text-center mt-8">더보기</div>
       </section>
     </section>
   );
