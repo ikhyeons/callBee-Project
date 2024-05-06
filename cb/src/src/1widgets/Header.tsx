@@ -8,11 +8,13 @@ import UserBox from "../3entities/user/ui/userbox/UserBox";
 function Header() {
   const twBuilder = new TwBuilder("");
   const headerStyle = twBuilder
+    .setPosition("fixed")
     .setDisplay("flex")
-    .setAlignItem("center")
-    .setBackgroundColor("slate-800")
-    .setSize("full", "auto")
     .setFlexJustify("around")
+    .setAlignItem("center")
+    .setBackgroundColor("black")
+    .setSize("dvw", "auto")
+    .setTop(0)
     .build();
 
   const ulStyle = twBuilder.setMargin(2).setDisplay("flex").build();

@@ -1,6 +1,6 @@
 export default {
   background: {
-    color: ["bg-slate-300", "bg-slate-600", "bg-slate-800"],
+    color: ["bg-black", "bg-slate-300", "bg-slate-600", "bg-slate-800"],
   },
   cursor: ["pointer", "wait", "text", "move", "help", "not-allowed"],
 
@@ -138,8 +138,10 @@ export default {
 
   boxSize: {
     w: [
-      "full",
-      "auto",
+      "w-dvw",
+      "w-screen",
+      "w-full",
+      "w-auto",
       "w-8",
       "w-10",
       "w-11",
@@ -154,8 +156,8 @@ export default {
       "w-80",
     ],
     h: [
-      "full",
-      "auto",
+      "h-full",
+      "h-auto",
       "h-8",
       "h-10",
       "h-11",

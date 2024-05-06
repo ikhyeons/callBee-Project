@@ -16,5 +16,6 @@
 }
 
 main {
+  margin-top: 64px;
   background-color: rgba(16, 16, 16, 0.932);
 }

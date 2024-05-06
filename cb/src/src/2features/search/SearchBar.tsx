@@ -1,5 +1,6 @@
 import TwBuilder from "@/src/4shared/TwBuilder";
 import React from "react";
+import { FaSearch } from "react-icons/fa";
 
 function SearchBar() {
   const twBuilder = new TwBuilder("");
@@ -33,7 +34,9 @@ function SearchBar() {
   return (
     <div className={`${searchBarBoxStyle}`}>
       <input className={`${searchBarStyle}`} type="text" />
-      <button className={`${searchBtnStyle}`}>검</button>
+      <button className={`${searchBtnStyle}`}>
+        <FaSearch />
+      </button>
     </div>
   );
 }
